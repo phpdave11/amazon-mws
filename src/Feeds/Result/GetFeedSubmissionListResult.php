@@ -70,4 +70,3 @@ final class GetFeedSubmissionListResult implements IterableResultInterface
         return $this->Feeds?: [];
     }
 }
-B
