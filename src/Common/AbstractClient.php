@@ -130,7 +130,7 @@ class AbstractClient implements ClientInterface, CredentialsAwareInterface
     protected function send(RequestInterface $request, $throttle = 30)
     {
         $requestEvent = new RequestEvent($request);
-        $this->dispatch(Events::REQUEST, $requestEvent);
+        $this->dispatch($requestEvent);
 
         $client  = $this;
         $headers = ['Content-Type' => 'application/x-www-form-urlencoded; charset=utf-8', 'Expect' => ''];
