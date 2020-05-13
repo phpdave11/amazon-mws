@@ -12,7 +12,7 @@ use Psr\Http\Message\UriInterface;
 
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 use SellerWorks\Amazon\Credentials\Credentials;
 use SellerWorks\Amazon\Credentials\CredentialsAwareInterface;

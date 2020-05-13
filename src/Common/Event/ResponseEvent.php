@@ -2,7 +2,7 @@
 
 namespace SellerWorks\Amazon\Common\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 use SellerWorks\Amazon\Common\RequestInterface;
 use SellerWorks\Amazon\Common\ResponseInterface;
