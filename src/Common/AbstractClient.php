@@ -307,8 +307,8 @@ class AbstractClient implements ClientInterface, CredentialsAwareInterface
      * @param  Event  $event
      * @return Event
      */
-    protected function dispatch($name, Event $event)
+    protected function dispatch(Event $event, $name)
     {
-        return $this->getEventDispatcher()->dispatch($name, $event);
+        return $this->getEventDispatcher()->dispatch($event, $name);
     }
 }
